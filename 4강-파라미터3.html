@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background: #ffd4d4;
+            color: blueviolet;
+            padding: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="alert-box" id="alert">
+        alert 박스
+        <button onclick="알림창열기('none')">닫기</button>
+    </div>
+    <button onclick="알림창열기('block','아이디를 입력하세요')">버튼1</button>
+    <button onclick="알림창열기('block','비번을 입력하세요')">버튼2</button>
+
+    <script>
+        // !!알림창 두개 만들기!!
+        // 1번 알림창 "아이디를 입력하세요"
+        // 2번 알림창 "비번을 입력하세요"
+
+        function 알림창열기(인수1,인수2) {
+            document.getElementById('alert').style.display = 인수1;
+            document.getElementById('alert').innerHTML = 인수2;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

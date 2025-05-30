@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="hello">안녕하세요</h2>
+
+    <script>
+        document.getElementById('hello').innerHTML = '안녕';
+
+
+        // 웹문서.id에 맞는 html요소를 가져와.뭘바꿀지(내부글자)
+
+        // !!뭘바꿀수 있는지 종류!!
+        // document.getElementById('hello').style.color = 'red';                // 글자 색
+        // document.getElementById('hello').style.backgroundColor = 'yellow';   // 배경색
+        // document.getElementById('hello').style.fontSize = '24px';            // 글자 크기
+        // document.getElementById('hello').src = "image.jpg";                  // 이미지 변경
+        // document.getElementById('hello').setAttribute("title", "툴팁");      // 속성 추가/수정
+        // document.getElementById('hello').onclick = () => alert("클릭!");     // 클릭 이벤트 지정
+        // document.getElementById('hello').style.display = "none";             // 보이기/숨기기
+
+        // !!문법!!
+        // document.getElementById('hello') 셀렉터터
+        // = 대입
+        // '' 문자는 따옴표안에
+    </script>
+</body>
+</html>
